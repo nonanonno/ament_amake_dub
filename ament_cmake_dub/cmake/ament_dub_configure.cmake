@@ -1,4 +1,5 @@
 macro(ament_dub_configure)
+  _ament_cmake_dub_register_environment_hook(${ARGN})
   _ament_cmake_dub_configure(${ARGN})
 endmacro()
 
