@@ -1,0 +1,16 @@
+.dub
+docs.json
+__dummy.html
+docs/
+/test_pkg2
+test_pkg2.so
+test_pkg2.dylib
+test_pkg2.dll
+libtest_pkg2.a
+test_pkg2.lib
+test_pkg2-test-*
+*.exe
+*.o
+*.obj
+*.lst
+bin

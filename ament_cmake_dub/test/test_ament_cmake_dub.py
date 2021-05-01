@@ -30,4 +30,4 @@ def test_build(bash: pytest_shell.shell.bash):
     assert bash.run_script_inline([
         'source install/setup.bash',
         f'colcon build --paths {PATH_TO_THIS}/*'
-    ]).count('Summary: 1 package finished') > 0
+    ]).count('Summary: 2 packages finished') > 0
