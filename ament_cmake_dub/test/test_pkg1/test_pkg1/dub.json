@@ -12,5 +12,8 @@
 			"name": "lib",
 			"targetType": "library"
 		}
-	]
+	],
+	"dependencies": {
+		"silly": "~>1.1.0"
+	}
 }

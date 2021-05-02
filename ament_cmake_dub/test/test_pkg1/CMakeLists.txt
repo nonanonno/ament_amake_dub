@@ -10,6 +10,10 @@ ament_dub_add_library(${PROJECT_NAME}
   CONFIG lib
 )
 
+ament_dub_add_test(${PROJECT_NAME}
+  RUN_EXTRA -i fail
+)
+
 install(
   DIRECTORY ${PROJECT_NAME}
   DESTINATION "lib/dub"

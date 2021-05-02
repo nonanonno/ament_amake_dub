@@ -31,3 +31,18 @@ def test_build(bash: pytest_shell.shell.bash):
         'source install/setup.bash',
         f'colcon build --paths {PATH_TO_THIS}/*'
     ]).count('Summary: 2 packages finished') > 0
+
+
+def test_test(bash: pytest_shell.shell.bash):
+    """
+    Check if the dub package can be tested via ament_cmake_dub by detecting
+    test failure.
+    """
+    bash.cd(WORKSPACE_ROOT)
+    bash.auto_return_code_error = False
+    bash.run_script_inline([
+        'source install/setup.bash',
+        f'colcon test --paths {PATH_TO_THIS}/*'
+        ' --return-code-on-test-failure'
+    ])
+    assert bash.last_return_code != 0
