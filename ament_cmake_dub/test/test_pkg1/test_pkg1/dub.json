@@ -1,0 +1,19 @@
+{
+	"authors": [
+		"nonanonno"
+	],
+	"copyright": "Copyright © 2021, nonanonno",
+	"description": "A minimal D application.",
+	"license": "Apache-2.0",
+	"name": "test_pkg1",
+	"version": "0.0.1",
+	"configurations": [
+		{
+			"name": "lib",
+			"targetType": "library"
+		}
+	],
+	"dependencies": {
+		"silly": "~>1.1.0"
+	}
+}

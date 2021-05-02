@@ -1,0 +1,28 @@
+{
+	"authors": [
+		"nonanonno"
+	],
+	"copyright": "Copyright © 2021, nonanonno",
+	"description": "A minimal D application.",
+	"license": "Apache-2.0",
+	"name": "test_pkg2",
+	"version": "0.0.1",
+	"configurations": [
+		{
+			"name": "exec1",
+			"targetName": "executable1",
+			"targetPath": "bin",
+			"targetType": "executable"
+		},
+		{
+			"name": "exec2",
+			"targetName": "executable2",
+			"targetPath": "bin",
+			"targetType": "executable"
+		}
+	],
+	"dependencies": {
+		"silly": "~>1.1.0",
+		"test_pkg1": "~>0.0.1"
+	}
+}
